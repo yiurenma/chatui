@@ -17,13 +17,16 @@ def greatAI(input):
   # if len(messages) >= max_len:
   #   messages.pop(0)
   # messages.append({'role': 'user', 'content': input})
-  openai.api_key = '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'
+  openai.api_key = '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'
   # print(messages)
   print(input)
   response = openai.ChatCompletion.create(
-    model = 'gpt-3.5-turbo-0301',
+    model = 'gpt-3.5-turbo',
     # messages = messages
-    messages = [{'role': 'user', 'content': input}]
+    messages = [{'role': 'user', 'content': input}],
+    presence_penalty = 0,
+    stream = True,
+    temperature = 1
   )
   # if len(messages) >= max_len:
   #     messages.pop(0)
