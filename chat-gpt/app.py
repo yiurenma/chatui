@@ -17,7 +17,7 @@ def greatAI(input):
   # if len(messages) >= max_len:
   #   messages.pop(0)
   # messages.append({'role': 'user', 'content': input})
-  openai.api_key = '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'
+  openai.api_key = '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'
   # print(messages)
   print(input)
   response = openai.ChatCompletion.create(
